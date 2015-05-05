@@ -10,6 +10,11 @@ Vagrant.configure("2") do |config|
         ansible.playbook = "site.yml"
         end
 
+        config.vm.define "node" do |node|
+        node.vm.box = "precise64"
+        node.vm.network  "private_network", ip: "192.168.56.10"
+       end
+
         config.vm.provider "virtualbox" do |vb|
    vb.customize ["modifyvm", :id, "--memory", "8196"]
  end
