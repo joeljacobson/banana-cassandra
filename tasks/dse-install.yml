@@ -5,5 +5,8 @@
 - name: creating jna symlink
   shell: ln -s /usr/share/java/jna.jar /usr/share/dse/cassandra/lib || true
 
+- name: configuring datastax enterprise
+  template: src=templates/cassandra.yaml dest=/etc/dse/cassandra/cassandra.yaml
+
 - name: enabling solr
   shell: sed -i 's/SOLR_ENABLED=0/SOLR_ENABLED=1/g' /etc/default/dse
