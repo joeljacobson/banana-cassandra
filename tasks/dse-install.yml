@@ -1,0 +1,9 @@
+- name: installing datastax enterprise
+  apt: pkg=dse-full state=installed update-cache=yes
+  register: dse
+
+- name: creating jna symlink
+  shell: ln -s /usr/share/java/jna.jar /usr/share/dse/cassandra/lib || true
+
+- name: enabling solr
+  shell: sed -i 's/SOLR_ENABLED=0/SOLR_ENABLED=1/g' /etc/default/dse
