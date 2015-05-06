@@ -1,7 +1,7 @@
-Ignore this for now I'm jusst experimenting;
+Work in progress
 
-http://localhost:8983/solr/#/
-http://localhost:8983/banana/
+Soon to be one click deploy of DataStax Cassandra, Logstash and Solr.
 
-git clone https://github.com/LucidWorks/banana.git 
-usr/share/dse/solr/web
+http://192.168.56.10:8983/solr/#/
+
+http://192.168.56.10:8983/banana/
