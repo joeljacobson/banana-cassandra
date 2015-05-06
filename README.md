@@ -1,4 +1,15 @@
+Prerequisites
+---
+
+Virtualbox
+
+Vagrant
+
+Ansible
+
+
 Work in progress
+---
 
 Soon to be one click deploy of DataStax Cassandra, Banana, Logstash and Solr.
 
